@@ -4,7 +4,7 @@
 
 Play at [portfolio.filiplundby.dk/treasure](https://portfolio.filiplundby.dk/treasure/)
 
-Created in [Godot Engine](https://godotengine.org/) 3.4.4 stable, using [JavaScript bindings](https://github.com/GodotExplorer/ECMAScript).
+Created in Godot Engine 3.4.4, using [JavaScript bindings](https://github.com/GodotExplorer/ECMAScript/releases/tag/alpha16).
 
 
 ![Screenshot](screenshot.png)
