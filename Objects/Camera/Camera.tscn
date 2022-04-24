@@ -34,7 +34,7 @@ tracks/0/keys = {
 }
 
 [node name="Camera" type="Camera"]
-transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0.428624, 4.21495, 7 )
+transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 4, 7 )
 script = ExtResource( 1 )
 
 [node name="CameraAnimation" type="AnimationPlayer" parent="."]
