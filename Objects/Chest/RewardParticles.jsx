@@ -6,7 +6,7 @@ export default class RewardParticles extends godot.Particles {
     _ready() {
         this.tree = this.get_tree();
         this.eventBus = this.tree.get_root().get_node("EventBus");
-		this.eventBus.connect("chest_revealed", this, "onChestRevealed");
+        this.eventBus.connect("chest_revealed", this, "onChestRevealed");
     }
 
     onChestRevealed(node) {

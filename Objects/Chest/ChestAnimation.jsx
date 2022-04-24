@@ -17,8 +17,8 @@ export default class ChestAnimation extends godot.AnimationPlayer {
 
 	onGameRestart() {
 		// Play animations backwards only for the clicked chest
-        if (this.assigned_animation == "") return;
-        if (this.current_animation_position <= 0) return;
+		if (this.assigned_animation == "") return;
+		if (this.current_animation_position <= 0) return;
 		this.play_backwards("Open");
 	}
 }
