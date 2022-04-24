@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Objects/Chest/Chest.jsx" type="Script" id=1]
 [ext_resource path="res://Objects/Chest/Model/Chest_Cube.mesh" type="ArrayMesh" id=2]
@@ -115,16 +115,6 @@ flags_do_not_receive_shadows = true
 vertex_color_use_as_albedo = true
 params_cull_mode = 2
 
-[sub_resource type="ParticlesMaterial" id=12]
-emission_shape = 2
-emission_box_extents = Vector3( 0, 0.5, 0 )
-flag_align_y = true
-direction = Vector3( 0, 1, 0 )
-initial_velocity = 12.0
-radial_accel = -6.37
-hue_variation = 1.0
-hue_variation_random = 1.0
-
 [sub_resource type="QuadMesh" id=13]
 size = Vector2( 0.1, 0.2 )
 
@@ -166,7 +156,7 @@ anims/Reveal = SubResource( 9 )
 anims/Rotation = SubResource( 10 )
 script = ExtResource( 8 )
 
-[node name="RewardParticles" type="Particles" parent="."]
+[node name="RewardParticles" type="CPUParticles" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 material_override = SubResource( 11 )
 cast_shadow = 0
@@ -175,8 +165,15 @@ amount = 32
 one_shot = true
 explosiveness = 0.85
 local_coords = false
-process_material = SubResource( 12 )
-draw_pass_1 = SubResource( 13 )
+mesh = SubResource( 13 )
+emission_shape = 2
+emission_box_extents = Vector3( 0, 0.5, 0 )
+flag_align_y = true
+direction = Vector3( 0, 1, 0 )
+initial_velocity = 12.0
+radial_accel = -6.37
+hue_variation = 1.0
+hue_variation_random = 1.0
 script = ExtResource( 10 )
 
 [node name="ChestAudio" type="AudioStreamPlayer" parent="."]
